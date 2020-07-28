@@ -1,13 +1,3 @@
-/* .list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.link {
-  text-decoration: none;
-} */
-
 /* Герой */
 .hero > .overlay {
   text-align: center;
@@ -142,18 +132,21 @@
   margin-right: 30px;
 }
 
-.work-list a {
-  display: block;
+.work-item .link {
+  position: relative;
 }
 
 .work-list .work-subtitle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
   margin: 0;
-  text-transform: uppercase;
-  /* временные паддинги */
   padding: 27px 80px;
 
   color: var(--primary-white-color);
 
+  text-transform: uppercase;
   font-weight: 700;
   text-align: center;
 
