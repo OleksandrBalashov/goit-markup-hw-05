@@ -1,4 +1,4 @@
-/* Герой */
+/* ГЕРОЙ */
 .hero > .overlay {
   text-align: center;
 }
@@ -55,7 +55,7 @@
   letter-spacing: 0.06em;
 }
 
-/* Наши преимущества */
+/* НАШИ ПРЕИМУЩЕСТВА*/
 
 .section {
   padding-top: 94px;
@@ -103,7 +103,7 @@
   line-height: 1.71;
 }
 
-/* Чем мы занимаемся */
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ */
 .card-image {
   display: block;
 }
@@ -153,7 +153,7 @@
   background-color: var(--third-bg-color);
 }
 
-/* Наша команда */
+/* НАША КОМАНДА */
 
 .section.team-bgc {
   background-color: #f5f4fa;
@@ -199,6 +199,11 @@
   line-height: 1.19;
 }
 
+.team-list .team-socials {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-icon .social-icon {
   display: flex;
   justify-content: center;
@@ -206,6 +211,10 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    --color1 var(--transition-duration) var(--transition-timing-function);
 }
 
 .team-icon .social-icon:hover,
@@ -214,16 +223,8 @@
   background-color: var(--accent-color);
 }
 
-.team-list .team-socials {
-  display: flex;
-  justify-content: space-between;
-}
+/* ПОСТОЯННЫЕ КЛИЕНТЫ */
 
-.team-socials li:not(:last-child) {
-  margin-right: 10px;
-}
-
-/* Постоянные клиенты */
 .clients-list {
   display: flex;
 }
@@ -243,6 +244,10 @@
   height: 90px;
   border: 1px solid var(--secondary-bg-color);
   border-radius: 4px;
+
+  transition: border-color var(--transition-duration)
+      var(--transition-timing-function),
+    --color1 var(--transition-duration) var(--transition-timing-function);
 }
 
 .client-company.link:hover,

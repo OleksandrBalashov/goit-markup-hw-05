@@ -18,6 +18,10 @@ html {
   --third-bg-color: rgba(47, 48, 58, 0.8);
   --button-bg-color: #f5f4fa;
   --border-portfolio-card: #eeeeee;
+  --bgc-link-text: rgba(33, 150, 243, 0.9);
+
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -65,7 +69,7 @@ img {
   margin-right: auto;
 }
 
-/* хэдер */
+/* ХЭДЕР */
 .flex-container {
   display: flex;
   align-items: center;
@@ -108,6 +112,8 @@ img {
 
 .site-nav .link {
   color: var(--title-text-color);
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .site-nav .link:hover,
@@ -147,8 +153,14 @@ img {
   vertical-align: middle;
 }
 
+.address-text {
+  vertical-align: middle;
+}
+
 .site-address a {
   color: var(--primary-text-color);
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .site-address .address-item:not(:last-child) {
@@ -162,9 +174,7 @@ img {
   --color4: var(--accent-color);
 }
 
-/* футер */
-
-/* временный фон */
+/* ФУТЕР */
 footer {
   background-color: #2f303a;
 }
@@ -211,6 +221,8 @@ footer {
 
 .address {
   color: var(--primary-text-color);
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .address.link:hover,
@@ -246,6 +258,9 @@ footer {
   border-radius: 50%;
 
   background-color: var(--social-icon-color);
+
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .social-icon .icon-join {
