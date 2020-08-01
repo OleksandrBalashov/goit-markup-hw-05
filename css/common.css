@@ -20,7 +20,7 @@ html {
   --border-portfolio-card: #eeeeee;
   --bgc-link-text: rgba(33, 150, 243, 0.9);
 
-  --transition-duration: 1250ms;
+  --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -85,6 +85,18 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
+  animation: logo-appear 350ms linear;
+}
+
+@keyframes logo-appear {
+  0% {
+    transform: scale(0) rotate(0);
+  }
+
+  100% {
+    transform: scale(100%) rotate(360deg);
+  }
 }
 
 .logo .logo-primary {
