@@ -20,7 +20,7 @@ html {
   --border-portfolio-card: #eeeeee;
   --bgc-link-text: rgba(33, 150, 243, 0.9);
 
-  --transition-duration: 250ms;
+  --transition-duration: 1250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -33,6 +33,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -159,8 +160,10 @@ img {
 
 .site-address a {
   color: var(--primary-text-color);
+  fill: var(--primary-text-color);
 
-  transition: color var(--transition-duration) var(--transition-timing-function);
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .site-address .address-item:not(:last-child) {
@@ -170,8 +173,7 @@ img {
 .site-address a:hover,
 .site-address a:focus {
   color: var(--accent-color);
-  --color1: var(--accent-color);
-  --color4: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* ФУТЕР */
@@ -264,7 +266,9 @@ footer {
 }
 
 .social-icon .icon-join {
-  --color1: var(--primary-white-color);
+  fill: var(--primary-white-color);
+  width: 20px;
+  height: 20px;
 }
 
 .socials-list .social-icon:hover,
@@ -304,4 +308,6 @@ footer {
 
 .icon-send {
   margin-left: 10px;
+  width: 24px;
+  height: 24px;
 }
