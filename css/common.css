@@ -85,7 +85,9 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
 
+.flex-container .logo.link {
   animation: logo-appear 350ms linear;
 }
 
