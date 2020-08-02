@@ -212,6 +212,7 @@
 .icon {
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
 
 .team-icon .social-icon {
@@ -224,16 +225,16 @@
 }
 
 .team-icon a {
-  fill: var(--secondary-bg-color);
+  color: var(--secondary-bg-color);
 
-  transition: fill var(--transition-duration) var(--transition-timing-function),
+  transition: color var(--transition-duration) var(--transition-timing-function),
     background-color var(--transition-duration)
       var(--transition-timing-function);
 }
 
 .team-icon a:hover,
 .team-icon a:focus {
-  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
@@ -251,6 +252,10 @@
   margin-right: 30px;
 }
 
+.client-icon {
+  fill: currentColor;
+}
+
 .client-company.link {
   display: flex;
   justify-content: center;
@@ -259,16 +264,16 @@
   border: 1px solid var(--secondary-bg-color);
   border-radius: 4px;
 
-  fill: var(--secondary-bg-color);
+  color: var(--secondary-bg-color);
 
   transition: border-color var(--transition-duration)
       var(--transition-timing-function),
-    fill var(--transition-duration) var(--transition-timing-function);
+    color var(--transition-duration) var(--transition-timing-function);
 }
 
 .client-company.link:hover,
 .client-company.link:focus {
   border-color: var(--accent-color);
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 /* Футер */
